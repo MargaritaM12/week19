@@ -1,37 +1,31 @@
 const select = document.getElementById('select');
-const num1 = document.getElementById('numFirst');
-const num2 = document.getElementById('numSecond');
+const num1 = document.getElementById('num1');
+const num2 = document.getElementById('num2');
 const btnResult = document.getElementById('send');
 const resultValuePage = document.getElementById('result');
 
-class Calc { 
+class Calc {
     constructor(options) {
         this.select = options.select;
-        this.numFirst1 = options.numFirst;
-        this.numSecond = options.numSecond;
+        this.num1 = options.num1;
+        this.num2 = options.num2;
         this.send = options.send;
         this.result = options.result;
-    createCalc() {
-            static staticSum(numFirst.value,numSecond.value){
-            return resultValuePage.innerHTML = numFirst.value + numSecond.value}
+    }
 
-            static minus(numFirst.value,numSecond.value){
-            return resultValuePage.innerHTML = numFirst.value - numSecond.value}
-            
-            static divide(numFirst.value,numSecond.value){
-            return resultValuePage.innerHTML = numFirst.value * numSecond.value}
+    Calc.staticSum(num1, num2) {
+        return resultValuePage.innerHTML = num1 + num2
+    };
 
-            static multiply(numFirst.value,numSecond.value){
-            return resultValuePage.innerHTML = numFirst.value / numSecond.value}
-}}}
-const case = false;
-if case(numFirst.value / 0) {
-    alert('На ноль делить нельзя!'); 
-}//
+    Calc.staticMin(num1, num2) {
+        return resultValuePage.innerHTML = num1 - num2
+    };
 
-button.addEventListener('click', () => {
-    document
-        .querySelector('input')
-        .value;
-    console.log(input.value);
-})
+    Calc.staticDivide(num1, num2) {
+        return resultValuePage.innerHTML = num1 * num2
+    };
+
+    Calc.staticMultiply(num1, num2) {
+        return resultValuePage.innerHTML = num1 / num2
+    };
+}
